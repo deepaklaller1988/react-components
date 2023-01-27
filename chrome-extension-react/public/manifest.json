@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "TODO List Chrome Extension",
+  "description": "First Base Level Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Open Popup",
+    "default_icon": "logo192.png"
+},
+"permissions":[
+  "scripting"
+],
+"host_permissions":[
+  "https://*/"
+]
+}
