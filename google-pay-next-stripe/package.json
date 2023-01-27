@@ -1,0 +1,21 @@
+{
+  "name": "google-pay-next-stripe",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@stripe/react-stripe-js": "^1.14.2",
+    "@stripe/stripe-js": "^1.42.1",
+    "eslint": "8.27.0",
+    "eslint-config-next": "13.0.2",
+    "next": "^13.0.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "stripe": "^10.17.0"
+  }
+}
