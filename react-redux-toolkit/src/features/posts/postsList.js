@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
+import PostAuthor from "./PostAuthor";
 import { selectAllPosts } from "./postsSlice";
-// import ReactionButtons from "./ReactionButtons";
+import ReactionButtons from "./ReactionButtons";
 
 const PostsList = () => {
     const posts = useSelector(selectAllPosts)
@@ -11,7 +12,10 @@ const PostsList = () => {
         <article key={post.id}>
             <h3>{post.title}</h3>
             <p>{post.content.substring(0, 100)}</p>
-            {/* <ReactionButtons post={post} /> */}
+            <p className="postCredit">
+                <PostAuthor userId={post.userId} />
+            </p>
+            <ReactionButtons post={post} />
         </article>
     ))
 
